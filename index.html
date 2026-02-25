@@ -43,6 +43,32 @@
             opacity: 0.9;
         }
         
+        .nav-links {
+            text-align: center;
+            margin-bottom: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-links a {
+            color: #667eea;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .nav-links a.active {
+            color: #764ba2;
+            font-weight: 700;
+        }
+        
         .last-updated {
             background-color: #fff;
             padding: 15px 25px;
@@ -153,6 +179,11 @@
             .container {
                 padding: 10px;
             }
+            
+            .nav-links a {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
@@ -164,8 +195,14 @@
     </header>
 
     <div class="container">
+        <!-- Navigation Links -->
+        <div class="nav-links">
+            <a href="index.html" class="active">Privacy Policy</a> |
+            <a href="terms.html">Terms of Service</a>
+        </div>
+
         <div class="last-updated">
-            <span>Last updated:</span> February 30, 2026
+            <span>Last updated:</span> February 24, 2026
         </div>
 
         <div class="content">
@@ -324,8 +361,8 @@
             <p>The App is not intended for young children below the minimum legal age. We do not knowingly collect data from children who are not permitted to use the service.</p>
             <p>If such data is discovered, it will be removed promptly.</p>
 
-            <h2>12. India-Specific Provisions (DPDT Act 2023)</h2>
-            <p>In compliance with the Digital Personal Data Protection Act, 2023 (DPDT Act):</p>
+            <h2>12. India-Specific Provisions (DPDP Act 2023)</h2>
+            <p>In compliance with the Digital Personal Data Protection Act, 2023 (DPDP Act):</p>
             <ul>
                 <li>We collect and process your personal data lawfully and transparently</li>
                 <li>You have the right to access, correct, and delete your personal data</li>
@@ -354,7 +391,11 @@
         </div>
 
         <footer>
-            <p>&copy; 2025 Storiva. All rights reserved.</p>
+            <p>&copy; 2026 Storiva. All rights reserved.</p>
+            <p>
+                <a href="index.html">Privacy Policy</a> | 
+                <a href="terms.html">Terms of Service</a>
+            </p>
         </footer>
     </div>
 
