@@ -152,16 +152,27 @@
         .nav-links {
             text-align: center;
             margin-bottom: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
         .nav-links a {
             color: #667eea;
-            margin: 0 10px;
+            margin: 0 15px;
             text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
         }
         
         .nav-links a:hover {
             text-decoration: underline;
+        }
+        
+        .nav-links a.active {
+            color: #764ba2;
+            font-weight: 700;
         }
         
         @media (max-width: 768px) {
@@ -176,6 +187,11 @@
             .container {
                 padding: 10px;
             }
+            
+            .nav-links a {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
@@ -187,10 +203,10 @@
     </header>
 
     <div class="container">
+        <!-- Navigation Links -->
         <div class="nav-links">
-            <a href="index.html">Privacy Policy</a> | 
-            <a href="terms.html">Terms of Service</a> | 
-            <a href="legal-pack.html">Legal Pack</a>
+            <a href="index.html">Privacy Policy</a> |
+            <a href="terms.html" class="active">Terms of Service</a>
         </div>
 
         <div class="meta-info">
@@ -275,7 +291,10 @@
 
         <footer>
             <p>&copy; 2026 Storiva. All rights reserved.</p>
-            <p><a href="index.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="legal-pack.html">Legal Pack</a></p>
+            <p>
+                <a href="index.html">Privacy Policy</a> | 
+                <a href="terms.html">Terms of Service</a>
+            </p>
         </footer>
     </div>
 
